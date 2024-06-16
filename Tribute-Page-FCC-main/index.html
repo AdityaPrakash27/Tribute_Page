@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XXXTentacion Tribute Page | FCC</title>
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome kit -->
+
+    <script
+      src="https://kit.fontawesome.com/4d63ed8f35.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!---- favicon ---->
+
+    <link
+      rel="shortcut icon"
+      href="./assets/hero/logo-favi.svg"
+      type="image/x-icon"
+    />
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <link rel="stylesheet" href="css/counter.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="off__canvas-overlay"></div>
+      <nav>
+        <div class="nav__container">
+          <div class="nav__logo">
+            <a href="#header">2Pac</a>
+          </div>
+          <!---- Menu ---->
+          <div class="nav__menu">
+            <!---- Close Menu ---->
+
+            <!-- <div class="nav__close">
+              <i class="fas fa-times"></i>
+            </div> -->
+            <ul>
+              <li>
+                <a href="#biography" class="biography__section">biografia</a>
+              </li>
+              <li>
+                <a href="#life__section" class="life__section">Vida Personal</a>
+              </li>
+              <li>
+                <a href="#music" class="music__section">Carrera Musical</a>
+              </li>
+              <li><a href="#legacy" class="legacy__section">Legado</a></li>
+            </ul>
+
+            <!---- Burguer Menu social links ---->
+            <div class="burguer__social">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/2pac/" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/2pac/" target="_blank">
+                    <i class="fab fa-instagram-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/2pac" target="_blank">
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCMIdeeBjp_60Jv7ROpRxK6Q"
+                    target="_blank"
+                  >
+                    <i class="fab fa-youtube-square"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!---- social links ---->
+          <div class="nav__social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/2pac/" target="_blank">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/2pac/" target="_blank">
+                  <i class="fab fa-instagram-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/2pac" target="_blank">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCMIdeeBjp_60Jv7ROpRxK6Q"
+                  target="_blank"
+                >
+                  <i class="fab fa-youtube-square"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!---- Burguer Menu ---->
+          <div class="nav__burguer">
+            <div class="nav__burguer-line-1"></div>
+            <div class="nav__burguer-line-2"></div>
+            <div class="nav__burguer-line-3"></div>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div class="hero__container">
+          <div class="hero__container-content">
+            <!---- left side ---->
+            <div class="hero__text">
+              <h1 class="hero__title">Tupac Shakur</h1>
+              <p class="hero__description">
+                Considerado por muchos como uno de los raperos más importantes
+                de todos los tiempos, y más influyentes de la historia del rap.
+              </p>
+              <div class="vector__icons">
+                <ul>
+                  <li class="vector__icons-img">
+                    <img
+                      src="assets/hero/hero_icon_1.png"
+                      alt="vector icon 1"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/hero/hero_icon_2.png"
+                      alt="vector icon 2"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/hero/hero_icon_3.png"
+                      alt="vector icon 3"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/hero/hero_icon_4.png"
+                      alt="vector icon 4"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/hero/hero_icon_5.png"
+                      alt="vector icon 5"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!---- right side ---->
+            <div class="hero__image">
+              <img src="assets/hero/profile_photo-draw.jpg" alt="hero" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!---- BIOGRAPHY SECTION ---->
+
+    <main>
+      <section class="biography" id="biography">
+        <div class="icon__float-1">
+          <img
+            src="assets/biography/headphone_icon_150px.png"
+            alt="headphone float icon"
+          />
+        </div>
+        <div class="title__container">
+          <h1 class="biography__title">Biografia</h1>
+          <h2 class="biography__subtitle">Tupac Shakur</h2>
+        </div>
+        <div class="biography__container">
+          <!---- top side ---->
+          <div class="biography__text">
+            <p class="biography__description">
+              <strong>¿Quién fue Tupac Shakur?</strong><br />
+              Tupac Shakur (Nueva York, 16 de junio de
+              1971-Las Vegas, 13 de septiembre de 1996) también conocido como
+              2Pac, simplemente Tupac, fue un rapero y actor estadounidense.1​2​
+              Es considerado por muchos como uno de los raperos más importantes
+              de todos los tiempos, y más influyentes de la historia del
+              rap.3​4​ Gran parte de la obra Shakur se ha destacado por abordar
+              los problemas sociales que plagaban los centros urbanos, por lo
+              cual también es considerado un símbolo de resistencia y activismo
+              contra la desigualdad.
+              <!-- <br />
+              <br />
+              Shakur nació en el distrito de Manhattan de la ciudad de Nueva
+              York, pero en 1988 se trasladó a la área de la Bahía de San
+              Francisco. Más tarde, hacia 1993, se trasladó a Los Ángeles para
+              continuar con su carrera musical. Inicialmente, Shakur estuvo de
+              gira y fue bailarín de apoyo del grupo de hip-hop alternativo
+              Digital Underground.6​7​ En 1991, tras lanzar su primer álbum
+              2Pacalypse Now, se convirtió en una figura central del West Coast
+              hip hop, introduciendo temas sociales en el género en un momento
+              en que el gangsta rap era la corriente dominante.6​8​ Shakur
+              alcanzó un mayor éxito comercial y de crítica con sus siguientes
+              álbumes: Strictly 4 My N.I.G.G.A.Z... (1993) y su aclamado por la
+              crítica Me Against the World (1995), que ha sido considerado como
+              su obra maestra. -->
+            </p>
+            <p class="biography__color">
+              <a
+                href="https://es.wikipedia.org/wiki/Tupac_Shakur"
+                target="_blank"
+                >Mas acerca de la biografia de Tupac Shakur...</a
+              >
+            </p>
+            <!---- bottom side ---->
+          </div>
+          <div class="biography__image">
+            <div class="biography__image-card">
+              <img
+                src="assets/biography/tupac_profile_biography-1.jpg"
+                alt="biography-1"
+              />
+            </div>
+            <div class="biography__image-card">
+              <img
+                src="assets/biography/tupac_profile_biography-2.jpg"
+                alt="biography-2"
+              />
+            </div>
+            <div class="biography__image-card">
+              <img
+                src="assets/biography/tupac_profile_biography-3.jpg"
+                alt="biography-3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---- LIFE SECTION ---->
+
+      <section class="life" id="life__section">
+        <div class="icon__float-2 microphone__icon">
+          <img
+            src="assets/personal_life/microphone_icon_150px.png"
+            alt="microphone float icon"
+          />
+        </div>
+        <div class="life__container">
+          <div class="title__container">
+            <h1 class="biography__title">Vida Personal</h1>
+            <h2 class="biography__subtitle">Tupac Shakur</h2>
+          </div>
+          <div class="biography__container">
+            <!---- top side ---->
+            <div class="biography__text">
+              <p class="biography__description">
+                Tupac Amaru Shakur nació el 16 de junio de 1971, en East Harlem,
+                distrito de Manhattan, Nueva York.22​ Aunque nació como Lesane
+                Parish Crooks,23​24​25​ fue renombrado a la edad de un año en
+                honor a Túpac Amaru II26​ —descendiente del último gobernante
+                incaico, Túpac Amaru—, quien fue ejecutado en Perú en 1781 luego
+                de su fallida revuelta contra el dominio español.27​ Afeni
+                Shakur con la sala de emergencias de la Fundación Tupac Amaru
+                Shakur, fue madre de Tupac. La madre de Shakur explicó: «Quería
+                que tuviera nombre de revolucionario de los pueblos indígenas
+                del mundo. Quería que supiera que era parte de la cultura
+                mundial y no sólo de un barrio»28​ Shakur tuvo un hermanastro
+                mayor, Mopreme Komani Shakur, y una media hermana, Sekyiwa, dos
+                años menor que él.29​ Sus padres, Afeni Shakur —nacida como
+                Alice Faye Williams en Carolina del Norte— y su padre biológico,
+                Billy Garland, habían sido miembros activos del Partido Pantera
+                Negra en Nueva York a finales de la década de 1960 y comienzos
+                de la de 1970.
+                <!-- <br />
+                <br />
+                <strong>La amistad de Jada Pinkett Smith y Tupac</strong><br />
+                Tupac conoció a la actriz Jada Pinkett-Smith en la escuela
+                secundaria en la Escuela de Artes de Baltimore en Maryland. Tuvo
+                un cameo en su video musical de 'Strictly 4 My Niggaz'.
+                Pinkett-Smith apareció en la película de 2017 sobre Tupac All
+                Eyez on Me . Más tarde le dijo a los periodistas que era
+                traficante de drogas cuando conoció a Tupac y que encontró "muy
+                hiriente" la "reinvención" de su relación en la película. "No se
+                trataba solo de, oh, tienes a esta chica linda y a este chico
+                genial, deben haber estado en esto, nah, no fue eso en absoluto.
+                Se trataba de supervivencia, y siempre se había tratado de
+                supervivencia. entre nosotros", dijo. -->
+              </p>
+              <p class="biography__color">
+                <a
+                  href="https://es.wikipedia.org/wiki/Tupac_Shakur#Vida_personal"
+                  target="_blank"
+                  >Mas acerca de la vida personal de Tupac Shakur...</a
+                >
+              </p>
+            </div>
+            <div class="biography__image life-biography">
+              <div class="biography__image-card life-image">
+                <img
+                  src="assets/personal_life/tupac_personal_life_profile-1.jpg"
+                  alt="life-1"
+                />
+              </div>
+              <div class="biography__image-card life-image">
+                <img
+                  src="assets/personal_life/tupac_personal_life_profile-2.jpg"
+                  alt="life-2"
+                />
+              </div>
+              <div class="biography__image-card life-image">
+                <img
+                  src="assets/personal_life/tupac_personal_life_profile-3.png"
+                  alt="life-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---- MUSIC SECTION ---->
+
+      <section class="music" id="music">
+        <div class="icon__float-1 icon__float-3">
+          <img src="assets/music/audio_icon_150px.png" alt="audio float icon" />
+        </div>
+        <div class="title__container">
+          <h1 class="biography__title">Carrera Musical</h1>
+          <h2 class="biography__subtitle">Tupac Shakur</h2>
+        </div>
+        <div class="biography__container">
+          <!---- top side ---->
+          <div class="biography__text">
+            <p class="biography__description">
+              En enero de 1991, Shakur debutó como rapero a escala nacional bajo
+              el nombre artístico de 2Pac, invitado en el sencillo «Same Song»
+              del grupo de rap Digital Underground; tema que también apareció en
+              la banda sonora de la película Nothing but Trouble de febrero de
+              1991.72​ Los primeros dos álbumes solistas de 2Pac, 2Pacalypse Now
+              de noviembre de 1991 y Strictly 4 My N.I.G.G.A.Z... de febrero de
+              1993, precedieron al único álbum homónimo de su grupo secundario,
+              Thug Life, lanzado en septiembre de 1994 con su propia
+              participación.n. 3​ El rapero y productor Stretch participó en los
+              tres álbumes anteriores de 2Pac.
+            </p>
+            <p class="biography__color">
+              <a
+                href="https://es.wikipedia.org/wiki/Tupac_Shakur#Carrera_musical"
+                target="_blank"
+                >Mas acerca de la carrera musical de Tupac Shakur...</a
+              >
+            </p>
+            <hr />
+            <h2 class="biography__subtitle best__songs">
+              My Personal Best Songs
+            </h2>
+          </div>
+          <!---- bottom side ---->
+
+          <div class="biography__image cd__card-content">
+            <!---- CARD # 1 ---->
+            <div class="biography__image-card cd__card">
+              <div class="biography__cd-card">
+                <div class="biography__cd-content">
+                  <h3 class="biography__cd-title">Ambitionaz AZ A Ridah</h3>
+                  <p class="biography__cd-subtitle">
+                    <span class="biography__cd-album">All Eyez on Me</span>
+                    <span class="biography__cd-year">1996</span>
+                  </p>
+                  <div class="biography__cd-description">
+                    <p>
+                      La pista de introducción a uno de los mejores álbumes de
+                      la historia del hip-hop fue un himno directo que aseguró
+                      que "ALL EYEZ" estuviera en Pac. “Ambitionaz AZ A Ridah”
+                      es un himno que aún se escucha más de 20 años después.
+                    </p>
+                  </div>
+
+                  <!---- cd SVG ---->
+                  <svg
+                    class="biography__cd-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    width="3.95199in"
+                    height="3.95259in"
+                    version="1.1"
+                    style="
+                      shape-rendering: geometricPrecision;
+                      text-rendering: geometricPrecision;
+                      image-rendering: optimizeQuality;
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    "
+                    viewBox="0 0 383.34 383.4"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"
+                  >
+                    <g id="Capa_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer" />
+                      <g id="_2102856636800">
+                        <path
+                          fill="currentcolor"
+                          d="M180.33 0.4c-102.1,6.48 -186.73,92.97 -179.94,203.21 6.24,101.35 93.31,186.17 202.84,179.42 101.89,-6.28 186.5,-93.29 179.74,-203.21 -6.22,-101.12 -93.37,-186.34 -202.63,-179.41zm-78.56 158.8l12.85 4.42c9.51,-31.23 42.64,-53.54 77.06,-54.04l-0 -13.69c-23.41,0.3 -42.6,8.16 -57.19,18.95 -10.12,7.48 -29.11,27.46 -32.72,44.36zm89.91 114.65l0 13.68c23.41,-0.29 42.6,-8.17 57.19,-18.95 10.07,-7.44 29.16,-27.51 32.71,-44.34l-12.84 -4.43c-4.99,16.36 -17.66,29.87 -27.69,37.54 -12.25,9.37 -29.46,16.21 -49.37,16.51zm0 27.38l0 13.68c30.01,-0.3 55.3,-10.65 73.81,-24.57 13.73,-10.33 35.86,-33.82 41.84,-56.77l-12.87 -4.41c-2.85,10.03 -9.98,21.57 -15.39,28.55 -20.53,26.49 -49.75,43.1 -87.39,43.52zm-115.65 -151.37l12.87 4.42c5.44,-19.56 22.22,-38.75 37.27,-50.33 16.29,-12.53 39.13,-21.46 65.51,-21.75l-0 -13.68c-29.77,0.29 -55.5,10.78 -73.81,24.57 -13.72,10.32 -35.88,33.83 -41.83,56.78zm-25.75 -9.33l12.18 4.16c1.81,-2.06 7.05,-14.67 9,-18.42 22.28,-42.9 69,-70.95 120.22,-71.44l-0 -13.68c-36.07,0.34 -67.64,12.86 -89.95,29.82 -20.48,15.57 -44.83,43.99 -51.45,69.57zm141.4 188.08l0 13.68c50.61,-0.38 92.5,-23.8 120.01,-59.66 6.78,-8.84 17.98,-26.59 21.39,-39.73l-12.18 -4.16c-2.04,2.32 -6.95,14.48 -8.99,18.42 -22.28,42.9 -69,70.95 -120.22,71.44zm-6.31 -205.04c-35.78,3.48 -65.75,34.8 -61.8,74.89 3.48,35.23 34.8,65.22 74.57,61.41 35.66,-3.42 65.58,-34.99 61.65,-74.9 -3.47,-35.16 -34.82,-65.24 -74.42,-61.4z"
+                        />
+                        <path
+                          class="fil1"
+                          d="M183.58 137.68c-27.42,4.17 -51.36,29.64 -45.99,62.67 4.42,27.15 30.07,50.56 62.78,45.44 26.87,-4.21 50.65,-30.3 45.38,-62.73 -4.39,-27.06 -29.78,-50.31 -62.17,-45.38zm4.71 40.89c-18.12,5.25 -9.9,31.04 7.12,26.28 17.16,-4.8 9.81,-31.18 -7.12,-26.28z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  <!---- cd SVG ---->
+                  <div class="biography__cd-audio">
+                    <audio controls>
+                      <source
+                        src="assets/music/audio/2Pac - Ambitionz Az a Ridah.mp3"
+                        type="audio/mpeg"
+                      />
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!---- CARD # 2 ---->
+            <div class="biography__image-card cd__card">
+              <div class="biography__cd-card">
+                <div class="biography__cd-content">
+                  <h3 class="biography__cd-title">California Love</h3>
+                  <p class="biography__cd-subtitle">
+                    <span class="biography__cd-album">All Eyez on Me</span>
+                    <span class="biography__cd-year">1996</span>
+                  </p>
+                  <div class="biography__cd-description">
+                    <p>
+                      Cuando se trata de California Love, esta es una de las
+                      canciones de California más reconocibles de la historia.
+                      Ese fue Dre en la cima de su era G-Funk beat. “California
+                      Love” fue su primer sencillo para Deathrow Records, y fue
+                      un gran éxito.
+                    </p>
+                  </div>
+
+                  <!---- cd SVG ---->
+                  <svg
+                    class="biography__cd-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    width="3.95199in"
+                    height="3.95259in"
+                    version="1.1"
+                    style="
+                      shape-rendering: geometricPrecision;
+                      text-rendering: geometricPrecision;
+                      image-rendering: optimizeQuality;
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    "
+                    viewBox="0 0 383.34 383.4"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"
+                  >
+                    <g id="Capa_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer" />
+                      <g id="_2102856636800">
+                        <path
+                          fill="currentcolor"
+                          d="M180.33 0.4c-102.1,6.48 -186.73,92.97 -179.94,203.21 6.24,101.35 93.31,186.17 202.84,179.42 101.89,-6.28 186.5,-93.29 179.74,-203.21 -6.22,-101.12 -93.37,-186.34 -202.63,-179.41zm-78.56 158.8l12.85 4.42c9.51,-31.23 42.64,-53.54 77.06,-54.04l-0 -13.69c-23.41,0.3 -42.6,8.16 -57.19,18.95 -10.12,7.48 -29.11,27.46 -32.72,44.36zm89.91 114.65l0 13.68c23.41,-0.29 42.6,-8.17 57.19,-18.95 10.07,-7.44 29.16,-27.51 32.71,-44.34l-12.84 -4.43c-4.99,16.36 -17.66,29.87 -27.69,37.54 -12.25,9.37 -29.46,16.21 -49.37,16.51zm0 27.38l0 13.68c30.01,-0.3 55.3,-10.65 73.81,-24.57 13.73,-10.33 35.86,-33.82 41.84,-56.77l-12.87 -4.41c-2.85,10.03 -9.98,21.57 -15.39,28.55 -20.53,26.49 -49.75,43.1 -87.39,43.52zm-115.65 -151.37l12.87 4.42c5.44,-19.56 22.22,-38.75 37.27,-50.33 16.29,-12.53 39.13,-21.46 65.51,-21.75l-0 -13.68c-29.77,0.29 -55.5,10.78 -73.81,24.57 -13.72,10.32 -35.88,33.83 -41.83,56.78zm-25.75 -9.33l12.18 4.16c1.81,-2.06 7.05,-14.67 9,-18.42 22.28,-42.9 69,-70.95 120.22,-71.44l-0 -13.68c-36.07,0.34 -67.64,12.86 -89.95,29.82 -20.48,15.57 -44.83,43.99 -51.45,69.57zm141.4 188.08l0 13.68c50.61,-0.38 92.5,-23.8 120.01,-59.66 6.78,-8.84 17.98,-26.59 21.39,-39.73l-12.18 -4.16c-2.04,2.32 -6.95,14.48 -8.99,18.42 -22.28,42.9 -69,70.95 -120.22,71.44zm-6.31 -205.04c-35.78,3.48 -65.75,34.8 -61.8,74.89 3.48,35.23 34.8,65.22 74.57,61.41 35.66,-3.42 65.58,-34.99 61.65,-74.9 -3.47,-35.16 -34.82,-65.24 -74.42,-61.4z"
+                        />
+                        <path
+                          class="fil1"
+                          d="M183.58 137.68c-27.42,4.17 -51.36,29.64 -45.99,62.67 4.42,27.15 30.07,50.56 62.78,45.44 26.87,-4.21 50.65,-30.3 45.38,-62.73 -4.39,-27.06 -29.78,-50.31 -62.17,-45.38zm4.71 40.89c-18.12,5.25 -9.9,31.04 7.12,26.28 17.16,-4.8 9.81,-31.18 -7.12,-26.28z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  <!---- cd SVG ---->
+                  <div class="biography__cd-audio">
+                    <audio controls>
+                      <source
+                        src="assets/music/audio/2Pac - California Love.mp3"
+                        type="audio/mpeg"
+                      />
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!---- CARD # 3 ---->
+            <div class="biography__image-card cd__card">
+              <div class="biography__cd-card">
+                <div class="biography__cd-content">
+                  <h3 class="biography__cd-title">Changes</h3>
+                  <p class="biography__cd-subtitle">
+                    <span class="biography__cd-album">Greatest Hits</span>
+                    <span class="biography__cd-year">1995</span>
+                  </p>
+                  <div class="biography__cd-description">
+                    <p>
+                      "Changes" es una de las canciones más melódicas de Tupac
+                      jamás creadas. Esta es una pista que todavía se reproduce
+                      en la radio hoy. Esta es una canción que no fue lanzada
+                      como sencillo mientras estaba vivo.
+                    </p>
+                  </div>
+
+                  <!---- cd SVG ---->
+                  <svg
+                    class="biography__cd-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xml:space="preserve"
+                    width="3.95199in"
+                    height="3.95259in"
+                    version="1.1"
+                    style="
+                      shape-rendering: geometricPrecision;
+                      text-rendering: geometricPrecision;
+                      image-rendering: optimizeQuality;
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    "
+                    viewBox="0 0 383.34 383.4"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"
+                  >
+                    <g id="Capa_x0020_1">
+                      <metadata id="CorelCorpID_0Corel-Layer" />
+                      <g id="_2102856636800">
+                        <path
+                          fill="currentcolor"
+                          d="M180.33 0.4c-102.1,6.48 -186.73,92.97 -179.94,203.21 6.24,101.35 93.31,186.17 202.84,179.42 101.89,-6.28 186.5,-93.29 179.74,-203.21 -6.22,-101.12 -93.37,-186.34 -202.63,-179.41zm-78.56 158.8l12.85 4.42c9.51,-31.23 42.64,-53.54 77.06,-54.04l-0 -13.69c-23.41,0.3 -42.6,8.16 -57.19,18.95 -10.12,7.48 -29.11,27.46 -32.72,44.36zm89.91 114.65l0 13.68c23.41,-0.29 42.6,-8.17 57.19,-18.95 10.07,-7.44 29.16,-27.51 32.71,-44.34l-12.84 -4.43c-4.99,16.36 -17.66,29.87 -27.69,37.54 -12.25,9.37 -29.46,16.21 -49.37,16.51zm0 27.38l0 13.68c30.01,-0.3 55.3,-10.65 73.81,-24.57 13.73,-10.33 35.86,-33.82 41.84,-56.77l-12.87 -4.41c-2.85,10.03 -9.98,21.57 -15.39,28.55 -20.53,26.49 -49.75,43.1 -87.39,43.52zm-115.65 -151.37l12.87 4.42c5.44,-19.56 22.22,-38.75 37.27,-50.33 16.29,-12.53 39.13,-21.46 65.51,-21.75l-0 -13.68c-29.77,0.29 -55.5,10.78 -73.81,24.57 -13.72,10.32 -35.88,33.83 -41.83,56.78zm-25.75 -9.33l12.18 4.16c1.81,-2.06 7.05,-14.67 9,-18.42 22.28,-42.9 69,-70.95 120.22,-71.44l-0 -13.68c-36.07,0.34 -67.64,12.86 -89.95,29.82 -20.48,15.57 -44.83,43.99 -51.45,69.57zm141.4 188.08l0 13.68c50.61,-0.38 92.5,-23.8 120.01,-59.66 6.78,-8.84 17.98,-26.59 21.39,-39.73l-12.18 -4.16c-2.04,2.32 -6.95,14.48 -8.99,18.42 -22.28,42.9 -69,70.95 -120.22,71.44zm-6.31 -205.04c-35.78,3.48 -65.75,34.8 -61.8,74.89 3.48,35.23 34.8,65.22 74.57,61.41 35.66,-3.42 65.58,-34.99 61.65,-74.9 -3.47,-35.16 -34.82,-65.24 -74.42,-61.4z"
+                        />
+                        <path
+                          class="fil1"
+                          d="M183.58 137.68c-27.42,4.17 -51.36,29.64 -45.99,62.67 4.42,27.15 30.07,50.56 62.78,45.44 26.87,-4.21 50.65,-30.3 45.38,-62.73 -4.39,-27.06 -29.78,-50.31 -62.17,-45.38zm4.71 40.89c-18.12,5.25 -9.9,31.04 7.12,26.28 17.16,-4.8 9.81,-31.18 -7.12,-26.28z"
+                        />
+                      </g>
+                    </g>
+                  </svg>
+                  <!---- cd SVG ---->
+                  <div class="biography__cd-audio">
+                    <audio controls>
+                      <source
+                        src="assets/music/audio/2Pac - Changes.mp3"
+                        type="audio/mpeg"
+                      />
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---- BANNER SECTION ---->
+      <section class="banner__bg-image">
+        <div class="banner__bg-image-content">
+          <h1 class="banner__bg-image-title">
+            Si logras atravesar la oscuridad de la noche, habrá un día muy
+            soleado.
+          </h1>
+          <h2 class="banner__bg-image-subtitle">Tupac Shakur.</h2>
+        </div>
+      </section>
+
+      <!---- LEGACY SECTION ---->
+
+      <section class="legacy" id="legacy">
+        <div class="icon__float-2">
+          <img
+            src="assets/legacy/cassete_icon_150px.png"
+            alt="cassete float icon"
+          />
+        </div>
+        <div class="icon__float-1">
+          <img
+            src="assets/legacy/music_note_icon_150px.png"
+            alt="music note float icon"
+          />
+        </div>
+        <div class="title__container">
+          <h1 class="biography__title">Legado</h1>
+          <h2 class="biography__subtitle">Tupac Shakur</h2>
+        </div>
+        <div class="biography__container">
+          <!---- top side ---->
+          <div class="biography__text">
+            <p class="biography__description">
+              En 2007, la revista de rap en línea AllHipHop celebró una mesa
+              redonda donde, entre varios raperos de Nueva York, Cormega citó la
+              experiencia de su gira con el dúo de rap de neoyorquino Mobb Deep,
+              impartiendo una amplia evaluación: «Biggie dirigió Nueva York.
+              'Pac dirigió América».205​ En 2010, el rapero neoyorquino 50 cent
+              escribió la entrada sobre Tupac Shakur para la lista de los «100
+              mejores artistas» de la revista Rolling Stone, donde Shakur figura
+              en el puesto 86, y evaluó: «Todo rapero que creció en los años
+              noventa le debe algo a Tupac. No sonaba como nadie que haya venido
+              antes que él».206​ Dotdash, anteriormente About.com, aunque lo
+              ubica en el quinto lugar entre los mejores raperos, señala: «Tupac
+              Shakur es el artista de hip-hop más influyente de todos los
+              tiempos. Incluso muerto, 2Pac sigue siendo una figura
+              trascendental del rap».207​ Sin embargo, para algunos, fue una
+              «figura paterna» que, según el rapero YG, «te hace querer mejorar,
+              en todos los niveles».
+              <!-- <br />
+              <br />
+              Según el periodista musical Chuck Philips, el artista fallecido
+              «había ayudado a elevar el rap de una cruda moda callejera a una
+              compleja forma de arte, preparando el escenario para el actual
+              fenómeno global del hip-hop». Philips además escribe: «El
+              asesinato silenció a una de las voces más elocuentes de la música
+              moderna: un poeta del gueto cuyas historias de alienación urbana
+              cautivaron a los jóvenes de todas las razas y orígenes».209​ A
+              través de los numerosos fanáticos que lo perciben como un mártir,
+              pese a lo cuestionable de su conducta, Michael Eric Dyson admite
+              que «disminuir al mártir abarata su uso».210​ Pero agrega:
+              «Algunas, o incluso la mayoría de esas críticas pueden ser
+              concedidas sin dañar el estatus de mártir de Tupac ante los ojos
+              de aquellos que han sido decepcionados por los mártires más
+              tradicionales».210​ O más simplemente, sus escritos publicados
+              póstumamente inspiraron al rapero YG a regresar a la escuela y a
+              obtener su GED. -->
+            </p>
+            <p class="biography__color">
+              <a
+                href="https://es.wikipedia.org/wiki/Tupac_Shakur#Legado_y_memoria"
+                target="_blank"
+                >Mas acerca del legado y memoria de Tupac Shakur...</a
+              >
+            </p>
+          </div>
+          <div class="biography__image legacy-biography">
+            <div class="biography__image-card legacy-image">
+              <img src="assets/legacy/Tupac-legacy-1.jpg" alt="legacy-1" />
+              <div class="biography__image-card-modal legacy__modal-1">
+                <h4>Estatua de Tupac</h4>
+                <span>Dalas, Texas</span>
+              </div>
+            </div>
+            <div class="biography__image-card legacy-image">
+              <img src="assets/legacy/Tupac-legacy-2.jpg" alt="legacy-2" />
+              <div class="biography__image-card-modal legacy__modal-2">
+                <h4>Grafiti de Tupac</h4>
+                <span>East Harlem, Nueva York</span>
+              </div>
+            </div>
+            <div class="biography__image-card legacy-image">
+              <img src="assets/legacy/Tupac-legacy-3.jpg" alt="legacy-3" />
+              <div class="biography__image-card-modal legacy__modal-3">
+                <h4>Grafiti de Tupac</h4>
+                <span>Ipanema, Río de Janeiro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-----Top Button ----->
+      <a class="top" href="#header"
+        ><div class="top__button">
+          <i class="fas fa-arrow-up"></i></div
+      ></a>
+
+      <!---- FOOTER SECTION ---->
+      <footer class="footer">
+        <div class="footer__text">
+          <p>
+            Copyright © 2022 | Coded with
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            by
+            <a
+              href="https://heric-olier-frontend-developer.netlify.app/"
+              target="_blank"
+            >
+              Heric Olier
+            </a>
+          </p>
+        </div>
+    
+      </footer>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+

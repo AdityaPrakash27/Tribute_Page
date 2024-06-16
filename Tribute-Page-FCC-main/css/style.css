@@ -1,0 +1,736 @@
+:root {
+  --background-dark: #0a0a0a;
+  --primary-color: #e48e15;
+  --gray-color: #a9a9a9;
+  --secondary-white: #f5f5f5;
+  --secondary-black: #2c3135;
+  --tertiary-black: #151515;
+  --montserrat-font: Montserrat, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--tertiary-black);
+  font-family: var(--montserrat-font);
+  hyphens: auto;
+  height: 100vh;
+}
+
+/*! <--------- Header Nav Section --------->*/
+
+header {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--background-dark);
+}
+
+nav {
+  width: 100%;
+  height: 65px;
+  background-color: var(--primary-color);
+  box-shadow: 0 0px 16px -6px rgb(5 5 5 / 30%),
+    0 25px 10px -24px rgb(5 5 5 / 10%);
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  /* max-width: 1160px; */
+  height: 65px;
+  margin: 0 auto;
+}
+
+.nav__logo a {
+  font-size: 23px;
+  font-weight: 800;
+  color: var(--background-dark);
+  text-decoration: none;
+}
+
+.nav__burguer {
+  display: none;
+}
+
+.nav__menu ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__menu-mobile {
+  display: none;
+}
+
+.nav__menu ul li {
+  list-style: none;
+  margin-left: 35px;
+}
+
+.nav__menu ul li a {
+  text-decoration: none;
+  color: var(--background-dark);
+  font-size: 15px;
+  font-weight: 800;
+  transition: all 0.17s ease-in-out;
+  text-transform: uppercase;
+}
+
+.nav__menu ul li a:hover {
+  color: var(--secondary-white);
+  text-decoration: line-through;
+}
+
+.nav__close {
+  display: none;
+}
+
+.nav__social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__social ul li {
+  list-style: none;
+  margin-left: 18px;
+}
+
+.burguer__social {
+  display: none;
+}
+
+.fab {
+  color: var(--background-dark);
+  font-size: 25px;
+  transition: all 0.19s ease-in-out;
+}
+
+.fab:hover {
+  color: var(--secondary-white);
+}
+
+/*! <--------- Main - Index section --------->*/
+
+.hero {
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero__container {
+  width: 90%;
+  min-height: 100vh;
+  max-width: 1160px;
+  padding: 130px 45px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__container-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 100px 0; */
+  width: 100%;
+}
+
+/* hero left */
+
+.hero__text {
+  width: 520px;
+  max-width: 520px;
+  display: flex;
+  transition: all 0.35s ease-in-out;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero__title {
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.hero__description {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+  line-height: 30px;
+  text-align: start;
+  color: var(--gray-color);
+}
+
+.vector__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.vector__icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vector__icons ul li {
+  margin: 0 10px;
+}
+
+.vector__icons ul li img {
+  width: 32px;
+  transition: all 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.vector__icons ul li img:hover {
+  transform: scale(1.5);
+}
+
+/* hero right */
+
+.hero__image {
+  width: 365px;
+  display: flex;
+  transition: all 0.35s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 16px solid var(--secondary-black);
+  border-radius: 1000px;
+}
+
+.hero__image img {
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+}
+
+.hero__image img:hover {
+  transform: scale(1.18);
+  transition: all 0.6s ease-out 0s;
+}
+
+/*! <--------- Biography Section --------->*/
+
+.biography {
+  width: 100%;
+  /* max-width: 1160px; */
+  margin: 0 auto;
+  padding: 130px 45px;
+  position: relative;
+  background-color: var(--tertiary-black);
+  transition: all 0.3s ease-in-out;
+}
+
+.icon__float-1 {
+  position: absolute;
+  top: 4%;
+  right: 5%;
+  padding: 0 25px;
+  z-index: 999;
+
+  user-select: none;
+  /* transform: translate3d(0px, -88px, 0px); */
+}
+
+.biography__title {
+  text-align: center;
+  font-size: 37px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--secondary-white);
+  margin-bottom: 30px;
+}
+
+.biography__text {
+  width: 100%;
+  max-width: 1160px;
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.biography__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.biography__container {
+  flex-direction: column;
+}
+
+/* biography top */
+
+.biography__subtitle {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.biography__description {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: justify;
+  color: var(--gray-color);
+}
+
+.biography__description strong {
+  font-weight: bold;
+}
+
+.biography__color a {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 15px;
+  padding-bottom: 30px;
+  color: var(--primary-color);
+}
+
+/* biography bottom */
+
+.biography__image-card {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+ 
+  transition: all 0.6s ease-in-out;
+  /* transition: all 0.45s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+}
+
+
+.biography__image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  margin: 0 auto;
+  padding-top: 50px;
+  transition: all 0.35s ease-in-out;
+}
+
+.biography__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease-out 0s;
+}
+
+.biography__image-card img:hover {
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39); */
+  transform: scale(1.15);
+  transition: all 0.6s ease-out 0s;
+  /* border: 5px solid var(--primary-color); */
+}
+
+
+/*! <--------- Personal Life Section --------->*/
+
+.life {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--background-dark);
+  transition: all 0.35s ease-in-out;
+}
+
+.icon__float-2 {
+  position: absolute;
+  top: 4%;
+  left: 7%;
+  padding: 0 25px;
+  transition: all 0.4s ease-in-out;
+  z-index: 999;
+  user-select: none;
+}
+
+.life__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 130px 45px;
+  position: relative;
+  background-color: var(--background-dark);
+}
+
+/*! <--------- Music Section --------->*/
+
+.music {
+  width: 100%;
+  margin: 0 auto;
+  padding: 130px 45px;
+  position: relative;
+  background-color: var(--tertiary-black);
+  transition: all 0.35s ease-in-out;
+}
+
+.cd__card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.35s ease-in-out;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid rgba(180, 180, 180, 0.267);
+  margin-top: 50px;
+}
+
+.best__songs {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cd__card {
+  border: none;
+}
+
+.cd__card:hover {
+  border: none;
+  transform: none;
+}
+
+.biography__cd-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  border: 1px solid var(--gray-color);
+  transition: all 0.5s;
+  padding: 35px 30px;
+  /* -webkit-transform: skewY(-4deg);
+  -ms-transform: skewY(-4deg);
+  transform: skewY(-4deg); */
+}
+
+.biography__cd-card:hover {
+  background-color: var(--secondary-white);
+  border: 2px solid var(--primary-color);
+}
+
+.biography__cd-card:hover .biography__cd-svg,
+.biography__cd-card:hover .biography__cd-title,
+.biography__cd-card:hover .biography__cd-description {
+  color: var(--background-dark);
+  transition: all ease-in-out 0.5s;
+}
+
+.biography__cd-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.biography__cd-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--secondary-white);
+  margin-bottom: 10px;
+}
+
+.biography__cd-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.biography__cd-album {
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.biography__cd-description {
+  font-size: 13px;
+  line-height: 19px;
+  text-align: justify;
+  color: var(--gray-color);
+  margin-bottom: 15px;
+}
+
+.biography__cd-svg {
+  width: 80%;
+  height: 80%;
+  color: var(--secondary-white);
+  fill: var(--primary-color);
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.biography__cd-svg {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-animation-name: rotate;
+  transition-duration: 3.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-transition-property: -moz-transform;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 3.8s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  transition-property: transform;
+  animation-name: rotate;
+  animation-duration: 3.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.biography__cd-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+audio {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border-radius: 30px;
+  border: 3px solid var(--primary-color);
+}
+
+/*! <--------- Banner Section --------->*/
+
+.banner__bg-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 45px;
+  height: 550px;
+  object-fit: cover;
+  transition: all 0.35s ease-in-out;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/hero/tupac-banner-bg-tp.png");
+}
+
+.banner__bg-image img {
+  opacity: 0.5;
+}
+
+.banner__bg-image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1160px;
+  padding-top: 180px;
+}
+
+.banner__bg-image-title {
+  color: var(--secondary-white);
+  font-size: 38px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner__bg-image-subtitle {
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 7px rgb(0, 0, 0);
+}
+
+/*! <--------- Legacy Section --------->*/
+
+.legacy {
+  width: 100%;
+  margin: 0 auto;
+  padding: 130px 45px;
+  position: relative;
+  background-color: var(--tertiary-black);
+  transition: all 0.35s ease-in-out;
+}
+
+.legacy-image:hover {
+  transform: none;
+  border-color: var(--secondary-black);
+}
+
+.legacy-image:hover .biography__image-card-modal {
+  opacity: 1;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.biography__image-card-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+  color: var(--secondary-white);
+  background-color: var(--background-dark);
+  border-top: 4px solid var(--secondary-black);
+  /* transform: skewY(-5deg); */
+  transition: all ease-in 0.3s;
+  position: absolute;
+  bottom: -130px;
+}
+
+.biography__image-card-modal h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--secondary-white);
+  margin-bottom: 10px;
+}
+
+.biography__image-card-modal span {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+/*TOP BUTTON*/
+
+.top__button {
+  position: fixed;
+  bottom: 20px;
+  right: -80px;
+  z-index: 999;
+  font-size: 25px;
+  text-align: center;
+  transform: rotate(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--background-dark);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.top__button.active {
+  right: 20px;
+  transform: rotate(0deg);
+}
+
+.top__button:hover {
+  color: var(--secondary-white);
+  box-shadow: 0px 0px 10px rgba(255, 154, 59, 0.726);
+}
+
+/*! <--------- Footer Section --------->*/
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  max-width: 1160px;
+  position: relative;
+  background-color: var(--tertiary-black);
+  border-top: 1px solid var(--secondary-black);
+  transition: all 0.35s ease-in-out;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  color: var(--gray-color);
+  font-size: 14px;
+}
+
+.footer__text a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer__text a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.fa-heart {
+  color: var(--primary-color);
+}
