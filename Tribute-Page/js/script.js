@@ -21,17 +21,17 @@ const showNav = () => {
   offCanvasDelay.classList.toggle("active");
 };
 
-// El menu se muestra y se oculta con un click en el icono de hamburguesa
+// The menu is shown and hidden with a click on the hamburger icon
 navBurguer.addEventListener("click", () => {
   showNav();
 });
 
-// El menú se cierra al hacer click fuera del mismo
+// The menu closes when you click outside of it
 offCanvasDelay.addEventListener("click", () => {
   showNav();
 });
 
-// El menú se cierra al hacer click en un elemento del mismo
+// The menu closes when clicking on an element of it
 navMenuItems.forEach((item) => {
   item.addEventListener("click", () => {
     showNav();
@@ -40,7 +40,7 @@ navMenuItems.forEach((item) => {
 
 //*!--------------- scroll up & Top Button ---------------*//
 
-// El botón de subir se muestra y se oculta con el scroll
+// The upload button is shown and hidden with scroll
 window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
     topButton.classList.add("active");
@@ -51,7 +51,7 @@ window.addEventListener("scroll", () => {
 
 //*!--------------- Parallax ---------------*//
 
-//movemos el objeto suavemente con el scroll
+//move the object gently with the scroll
 window.addEventListener("scroll", () => {
   let scrollPosition = window.scrollY;
 
