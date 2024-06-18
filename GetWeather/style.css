@@ -5,12 +5,12 @@
   margin-left: 50px;
   border: 1px solid black;
   border-radius: 100px;
-  box-shadow: 0px 0px 10px 3px rgb(255, 205, 41);
+  box-shadow: 0px 0px 10px 3px #0062ff;
 }
 
 
 .search-input {
-  border: 1px solid rgb(0, 123, 255);
+  border: 1px solid #92B4EC;
   font-size: 1.3rem;
   text-align: center;
 }
@@ -20,9 +20,9 @@
 }
 
 .cards {
-  box-shadow: 4px 3px 20px 3px rgba(198, 244, 247, 0.75);
-  -webkit-box-shadow: 4px 3px 20px 3px rgba(198, 244, 247, 0.75);
-  -moz-box-shadow: 4px 3px 20px 3px rgba(198, 244, 247, 0.75);
+  box-shadow: 4px 3px 20px 3px #92B4EC;
+  -webkit-box-shadow: 4px 3px 20px 3px #92B4EC;
+  -moz-box-shadow: 4px 3px 20px 3px #92B4EC;
 }
 
 @media screen and (max-width: 768px) {
@@ -55,3 +55,6 @@
     width: 20px;
   }
 }
+body {background-color: #FFFFFF;}
+
+

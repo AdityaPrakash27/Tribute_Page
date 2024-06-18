@@ -2,9 +2,7 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GetWeather</title>
+    <title>Weather</title>
 
     <link href="E:\Virtual_Internship\CODXO\GetWeather\images\favicon-weather.ico" rel="icon" type="image/x-icon">
 
@@ -12,16 +10,20 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <link rel="stylesheet" href="E:\Virtual_Internship\CODXO\GetWeather\style.css">
+    </p>
   </head>
 
   <body>
+    <p style="background-color:#FFFFFF;">
 
     <!-- navbar  -->
     <nav id="topnav" class="navbar navbar-expand-lg navbar-light bg-light ">
       <div class="d-flex">
         <img class="weather-icon" src="E:/Virtual_Internship/CODXO/GetWeather/images/weather-icon.png" alt="weather icon">
         <div class="container-md">
-          <p class="display-6 icon-text fw-bold website-title">Get Weather</p>
+          <br>
+          <img src="E:\Virtual_Internship\CODXO\GetWeather\images\Winter is coming.png">
+          <p class="display-6 icon-text fw-bold website-title"></p>
         </div>
       </div>
     </nav>
@@ -31,12 +33,13 @@
 
         <!-- form -->
         <form class="d-flex cards">
-          <input type="text" class=" cards form-control me-3 py-2" id="cityName" placeholder="Enter your city..."
+          <input type="text" class=" cards form-control me-3 py-2" id="cityName" placeholder="Enter your city" autocomplete="on"
             required>
           <button class="btn btn-outline-primary" id="submit_button" type="submit">Search</button>
         </form>
       </div>
     </nav>
+  </p>
 
 
     <div class="container py-3">
@@ -47,10 +50,10 @@
 
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="display-2 fw-normal text-body-emphasis">
-            <span id="displayCity">Patna</span>
+            <span id="displayCity" style="color: #000000;">Patna</span>
           </h1>
           <br>
-          <p class="fs-5 text-body-secondary">weather description in your city is...
+          <p class="fs-5 text-body-secondary"><p style="color:#000000;">Weather Description in your City is :- </p>
           </p>
         </div>
       </header>
@@ -62,7 +65,7 @@
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Humidity Info</h4>
+                <h4 class="my-0 fw-normal">Humidity</h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title"><span class="humidity">0</span><small
@@ -137,24 +140,26 @@
 
     </div>
 
-
+    <!--
     <div class="container">
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-          <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li> -->
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
         </ul>
+      -->
         <footer style="color: grey; font-size: small;text-align: center;">
-          The GetWeather website is an interactive and user-friendly web application designed to provide real-time
+          <hr>
+          The Winter is Coming website is an interactive and user-friendly web application designed to provide real-time
           weather information to users around the world. <br>This project was conceived with the goal of offering a
           seamless
           and efficient way for people to access up-to-date weather forecasts for any location.
 
         </footer>
-        <p class="text-center text-muted" style="margin-top: 20px;">© <span class="year"></span> GetWeather</p>
+        <p class="text-center text-muted" style="margin-top: 20px;">© <span class="year"></span> Aditya</p>
       </footer>
     </div>
 
