@@ -89,6 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     getWeatherMethod(cityName.value);
   });
 
-  // Initial call to get weather information for "jaipur" on page load
-  getWeatherMethod("jaipur");
+  // Initial call to get weather information for "patna" on page load
+  getWeatherMethod("Patna");
 });
