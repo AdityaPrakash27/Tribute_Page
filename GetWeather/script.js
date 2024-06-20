@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '4b202ae02amshdb006aef5eaf54ep10e277jsn3b850d8d9f94',
+      'X-RapidAPI-Key': 'd701c108cdmshe697c4f3a44c20cp1e1fe7jsn8f0c8a55cd83',
       'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
     }
   };
@@ -89,6 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     getWeatherMethod(cityName.value);
   });
 
-  // Initial call to get weather information for "patna" on page load
+  // Initial call to get weather information for "Patna" on page load
   getWeatherMethod("Patna");
 });
