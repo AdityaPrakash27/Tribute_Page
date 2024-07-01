@@ -15,4 +15,4 @@ This is a tribute page dedicated to the influential American rapper, singer, and
 - Musical Career: A deep dive into XXXTentacion's discography, featuring his albums "17" and "?", as well as his impact on modern rap music.<br>
 - Legacy: A look at XXXTentacion's posthumous influence and his contributions to the music industry, including his impact on fellow artists and fans.<br>
 <h3>Contributing</h3>
-If you'd like to contribute to this project, please fork the repository and submit a pull request. I'm always looking for ways to improve and expand my portfolio!
+If you'd like to contribute to this project, please fork the repository and submit a pull request. I'm always looking for ways to improve and expand my Tribute Page!
