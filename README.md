@@ -1,4 +1,4 @@
-#XXXTentacion Tribute Page
+# XXXTentacion Tribute Page
 This is a tribute page dedicated to the influential American rapper, singer, and songwriter Jahseh Dwayne Ricardo Onfroy, also known as XXXTentacion. The page showcases his life, musical career, and legacy, featuring sections on his biography, personal life, musical career, and legacy.
 
 <h3>Features</h3>
